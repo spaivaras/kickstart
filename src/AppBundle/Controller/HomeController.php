@@ -18,4 +18,16 @@ class HomeController extends Controller
         ));
     }
 
+    /**
+     * Home page index action.
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function helloAction()
+    {
+        return $this->render('AppBundle:Home:hello.html.twig', array(
+            // ...
+        ));
+    }
+
 }
