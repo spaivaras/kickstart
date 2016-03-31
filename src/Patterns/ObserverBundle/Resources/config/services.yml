@@ -1,0 +1,12 @@
+services:
+    app.acme.action.listener:
+        class: Patterns\ObserverBundle\EventListener\AcmeListener
+        arguments: []
+        tags:
+            - { name: kernel.event_listener, event: app.acme.service.pre.call, method: proccess }
+
+    app.acme.service:
+        class: Patterns\ObserverBundle\Service\AcmeService
+        arguments: ["@event_dispatcher"]
+        tags:
+            - { name: app.custom }

@@ -1,0 +1,14 @@
+parameters:
+    app.something: random
+
+services:
+    app.operator.sum:
+        class: Patterns\DependencyInjectionBundle\Service\SumOperator
+        arguments: []
+    app.calculator:
+        class: Patterns\DependencyInjectionBundle\Service\Calculator
+        arguments: ["@app.operator.sum"]
+        fa
+    app.calculator.factory:
+        class: Patterns\DependencyInjectionBundle\Service\ObjectFactory
+        arguments: ["something", %app.something%]

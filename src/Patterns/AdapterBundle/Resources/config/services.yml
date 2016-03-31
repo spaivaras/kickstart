@@ -1,0 +1,4 @@
+services:
+#    patterns_adapter.example:
+#        class: Patterns\AdapterBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

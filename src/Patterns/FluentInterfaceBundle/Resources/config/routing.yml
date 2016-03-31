@@ -1,0 +1,3 @@
+patterns_fluent_interface_homepage:
+    path:     /
+    defaults: { _controller: PatternsFluentInterfaceBundle:Default:index }

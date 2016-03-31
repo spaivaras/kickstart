@@ -1,0 +1,3 @@
+patterns_observer_homepage:
+    path:     /
+    defaults: { _controller: PatternsObserverBundle:Default:index }
