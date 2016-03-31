@@ -8,7 +8,6 @@ services:
     app.calculator:
         class: Patterns\DependencyInjectionBundle\Service\Calculator
         arguments: ["@app.operator.sum"]
-        fa
     app.calculator.factory:
         class: Patterns\DependencyInjectionBundle\Service\ObjectFactory
         arguments: ["something", %app.something%]

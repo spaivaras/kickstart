@@ -18,7 +18,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Patterns\FluentInterfaceBundle\PatternsFluentInterfaceBundle(),
             new Patterns\AdapterBundle\PatternsAdapterBundle(),
-            new Patterns\DecoratorBundle\PatternsDecoratorBundle(),
+//            new Patterns\DecoratorBundle\PatternsDecoratorBundle(),
             new Patterns\DependencyInjectionBundle\PatternsDependencyInjectionBundle(),
             new Patterns\ConfigurationBundle\PatternsConfigurationBundle(),
             new Patterns\ObserverBundle\PatternsObserverBundle(),
