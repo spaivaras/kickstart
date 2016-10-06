@@ -10,24 +10,33 @@ services:
       - "~/.composer:/root/.composer"
       - "~/.ssh:/root/.ssh"
       - "./:/var/www"
+  
   fpm:
     image: nfqakademija/fpm
+    user: "1000:1000"
     links:
       - mariadb
     volumes:
       - "./:/var/www"
+      - "./home:/home"
+
   npm:
     image: nfqakademija/node:6.4.0.1
+	user: "1000:1000"
     volumes:
       - "./:/home/app"
       - "/usr/local/lib/node_modules"
+      - "./home:/home"
+
   mariadb-data:
     image: tianon/true
     volumes:
       - /var/lib/mysql
+
   mariadb:
     image: mariadb:10.1.10
     volumes_from:
       - "mariadb-data"
     environment:
         MYSQL_ROOT_PASSWORD: root
+
