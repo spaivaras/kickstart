@@ -22,7 +22,7 @@ services:
 
   npm:
     image: nfqakademija/node:6.4.0.1
-	user: "1000:1000"
+    user: "1000:1000"
     volumes:
       - "./:/home/app"
       - "/usr/local/lib/node_modules"
