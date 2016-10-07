@@ -4,9 +4,9 @@
 parameters:
     database_host:     mariadb
     database_port:     ~
-    database_name:     akademija
-    database_user:     root
-    database_password: root
+    database_name:     project
+    database_user:     project
+    database_password: project
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
